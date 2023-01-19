@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Old Wikipedia design redirect",
+  "description": "Forces the old 2010-era Vector design of Wikipedia",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": [
+        "https://wikipedia.org/*",
+        "https://en.wikipedia.org/*"
+      ]
+    }
+]
+}
